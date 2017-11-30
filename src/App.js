@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import Users from './components/Users/index';
 
 class App extends Component {
   render() {
@@ -19,6 +20,7 @@ class App extends Component {
             <Route path="/home" component={Home} />
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
+            <Route path="/users" component={Users} />
           </div>
         </Router>
       </div>
@@ -36,6 +38,7 @@ function NavBar(props) {
       <NavBarItem to="/home">Home</NavBarItem>
       <NavBarItem to="/about">About</NavBarItem>
       <NavBarItem to="/contact">Contact</NavBarItem>
+      <NavBarItem to="/users">Users</NavBarItem>
     </div>
   );
 }
