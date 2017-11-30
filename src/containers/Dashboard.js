@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import { toggleHello } from '../actions';
+import { toggleHello, apiGetUsers } from '../actions';
 import Dashboard from '../components/Dashboard';
 
 // do logic here that are out of component's scope (between store and component)
@@ -11,6 +11,7 @@ const getModeText = flag => {
 
 const mapStateToProps = ({ dashboard }) => {
   return {
+    users: dashboard.users,
     flag: dashboard.flag,
     flagText: getModeText(dashboard.flag)
   };
@@ -18,7 +19,8 @@ const mapStateToProps = ({ dashboard }) => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onToggle: flag => dispatch(toggleHello(flag))
+    onToggle: flag => dispatch(toggleHello(flag)),
+    dispatchGetUsers: () => dispatch(apiGetUsers())
   };
 };
 

@@ -1,3 +1,8 @@
+// API Status
+export const API_LOADING = 'API_LOADING';
+export const API_SUCCESS = 'API_SUCCESS';
+export const API_FAILURE = 'API_FAILURE';
+
 // API Service Group : Login
 export const API_INIT = 'API_INIT';
 export const API_LOGIN = 'API_LOGIN';
