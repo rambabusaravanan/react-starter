@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
-import Users from './components/Users/index';
+import Users from './components/Users';
+import Dashboard from './containers/Dashboard';
 
 class App extends Component {
   render() {
@@ -21,6 +22,7 @@ class App extends Component {
             <Route path="/about" component={About} />
             <Route path="/contact" component={Contact} />
             <Route path="/users" component={Users} />
+            <Route path="/dashboard" component={Dashboard} />
           </div>
         </Router>
       </div>
@@ -39,6 +41,7 @@ function NavBar(props) {
       <NavBarItem to="/about">About</NavBarItem>
       <NavBarItem to="/contact">Contact</NavBarItem>
       <NavBarItem to="/users">Users</NavBarItem>
+      <NavBarItem to="/dashboard">Dashboard</NavBarItem>
     </div>
   );
 }
