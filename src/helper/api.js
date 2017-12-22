@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 var http = axios.create({
-  baseURL: 'https://jsonplaceholder.typicode.com',
+  baseURL: process.env.REACT_APP_BASE_URL,
   timeout: 8000,
   headers: { 'X-Custom-Header': 'foobar' }
 });
