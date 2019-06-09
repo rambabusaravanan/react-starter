@@ -19,9 +19,9 @@ jobs:
     steps:
       - checkout
 
-      - run:	
-        name: configure git	
-        command: |	
+      - run:
+        name: configure	
+        command: | 
           node -v
           npm -v
           yarn -v
