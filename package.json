@@ -13,10 +13,7 @@
     "redux-thunk": "^2.2.0"
   },
   "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --single-quote --write",
-      "git add"
-    ]
+    "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
   },
   "scripts": {
     "precommit": "lint-staged",
@@ -27,8 +24,10 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
+    "gh-pages": "2.0.1",
     "husky": "^0.14.3",
     "lint-staged": "^6.0.0",
     "prettier": "^1.9.2"
-  }
+  },
+  "homepage": "."
 }
