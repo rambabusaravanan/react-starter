@@ -16,6 +16,7 @@
     "src/**/*.{js,jsx,json,css}": ["prettier --single-quote --write", "git add"]
   },
   "scripts": {
+    "deploy": "gh-pages -d build",
     "precommit": "lint-staged",
     "pretty": "prettier --single-quote --write 'src/**/*.{js,jsx,json,css}'",
     "start": "react-scripts start",
