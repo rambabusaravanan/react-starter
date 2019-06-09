@@ -20,14 +20,14 @@ jobs:
       - checkout
 
       - run:
-        name: configure	
-        command: | 
-          node -v
-          npm -v
-          yarn -v
-          git --version
-          git config user.email "circleci@rambabusaravanan.com"	
-          git config user.name "Circle CI"
+          name: configure	
+          command: | 
+            node -v
+            npm -v
+            yarn -v
+            git --version
+            git config user.email "circleci@rambabusaravanan.com"	
+            git config user.name "Circle CI"
 
       # Download and cache dependencies
       - restore_cache:
